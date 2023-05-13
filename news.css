@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+  font-family: "apa aja";
+  src: url("gambar/Alata-Regular.ttf");
+}
+@font-face {
+  font-family: "valorant";
+  src: url("gambar/Valorant-Font.ttf");
+}
+@font-face {
+  font-family: "tungsten";
+  src: url("gambar/Tungsten-Bold.ttf");
+}
+@font-face {
+  font-family: "poppins";
+  src: url("gambar/Poppins-ExtraLight.ttf");
+}
+
+body {
+  width: 100%;
+  background: black;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1) 0%, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0.5) 100%),url('gambar/news.png');
+  background-position: top;
+  background-size:100%;
+  background-repeat: no-repeat;
+}
+
+header {
+  color: white;
+  font-family: "apa aja", sans-serif;
+}
+
+.navbar {
+  height: 75px;
+  margin: auto;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 5;
+}
+
+.navbar .icon {
+  width: max-content;
+  height: 70px;
+  float: left;
+}
+
+.navbar .logo {
+  font-size: 30px;
+  float: left;
+  margin-left: 45px;
+  padding: 0px 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar .logo a {
+  font-weight: bold;
+}
+
+.navbar a span {
+  color: #679aee;
+}
+
+.navbar .menu {
+  float: right;
+  margin-right: 45px;
+  padding-top: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+li#drop {
+  display: inline-block;
+}
+
+ul#isi {
+  position: absolute;
+  display: none;
+  background-color: #679aee;
+  box-sizing: border-box;
+  padding-left: 10px;
+  width: 7%;
+  z-index: 6;
+  border-radius: 0 10px 20px 10px;
+}
+
+ul#isi li {
+  margin-bottom: 10px;
+}
+
+ul#isi li a:hover {
+  color: #cdcdcd;
+}
+
+li#drop:hover ul#isi {
+  display: block;
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding-top: 5px;
+  margin-right: 45px;
+}
+
+.navbar ul .a:hover {
+  border-bottom: 3px solid #679aee;
+  transition: 0.5s;
+}
+
+.navbar ul .download {
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: #679aee solid;
+}
+
+.navbar ul .download:hover {
+  background: #679aee;
+  transition: 0.5s;
+}
+
+/* berita utama */
+.kata-pak-kusnadi-harus-ada-ruang-bernafas{
+  width: 100%;
+  height: 17vh;
+}
+
+.head{
+  width: 85%;
+  height: min-content;
+  margin: 0 auto;
+  margin-bottom: 1%;
+  background-color: #282f3f;
+  box-sizing: border-box;
+  color: white;
+}
+
+.head h1{
+  text-align: center;
+  font-family: 'valorant';
+  font-size: 5vw;
+  margin-top: 3%;
+}
+
+.head,.konten,.sidebar{
+  border: 0.5px solid #0f97b6;
+}
+
+main{
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  color: #fff;
+
+}
+
+main .konten{
+  width: 100%;
+  height: max-content;
+  background-color: #282f3f;
+  padding: 5%;
+  border-bottom: none;
+}
+
+main .konten .banner img{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  border: 2px solid #0f97b6;
+  width: 100%;
+}
+
+main .konten h1,p.tanggal{
+  text-align: center;
+  font-family: 'apa aja';
+}
+
+p.tanggal{
+  margin-bottom: 5%;
+}
+
+p.isi,p.biru{
+  font-size: 16px;
+}
+
+main .konten p.isi{
+  margin-bottom: 5%;
+  font-family: 'roboto',sans-serif;
+  line-height: 1.6;
+}
+
+main .konten h3.oranye{
+  color: #ffff4e;
+  font-family: 'roboto',sans-serif;
+  font-size: 24px;
+}
+
+main .konten p.biru{
+  color: #22c2e6;
+  font-family: 'roboto',sans-serif;
+}
+
+main .sidebar{
+  width: 20%;
+  height: 40vh;
+  background-color: #282f3f;
+}
+
+/* ini footer */
+footer{
+  width: 100%;
+  height: max-content;
+  background-color: #111;
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+footer img.foot{
+  display: block;
+  margin: auto;
+}
+
+footer img{
+  width: 7%;
+  height: auto;
+}
+
+footer p{
+  color: #fff;
+  font-size: 11px;
+  margin: 1% 0;
+  text-align: center;
+  font-family: 'poppins';
+}
+
+footer ul{
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin-bottom: 2%;
+}
+
+footer ul li{
+  margin: 0 5%;
+  font-family: 'apa aja',sans-serif;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #ffffff;
+  min-height: 10%;
+}
+
+::-webkit-scrollbar-track{
+  background-color: black;
+}

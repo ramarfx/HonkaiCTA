@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:'alata' ;
+    src: url("gambar/Alata-Regular.ttf");
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #252627;
+}
+
+main{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 45%;
+}
+
+main h1{
+    font-size: 5vw;
+    margin-bottom: 2%;
+}
+
+main p{
+    font-size: 1.3vw;
+    margin-bottom: 2%;
+}
+
+main h1, main p{
+    color: #f57855;
+    font-family: 'alata';
+    display: block;
+}
+
+main a.rumput{
+    border: 2px #f57855 solid;
+    padding: 3px 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #f57855;
+}
+
+main a.rumput:hover{
+    color: #252627;
+    border-color: #f57855;
+    background-color: #f57855;
+}
+
+.gambar{
+    width: 50%;
+    float: right;
+}
+
+.gambar img{
+    display: block;
+    float: right;
+    margin-top: 15%;
+    margin-right: 15%;
+    width: 75%;
+    height: auto;
+}
